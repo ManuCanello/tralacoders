@@ -1,0 +1,357 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #222;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-image: url(trala.png);
+  background-position: 0px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+}
+
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.titulo {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav button {
+  background-color: rgba(0, 128, 128, 0.5);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+nav button:hover {
+  background-color: #005fa3;
+  color: #cce6ff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 128, 128, 0.5)), url(banner2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding-top: 5rem;
+}
+
+#wave{
+  position: absolute;
+  z-index: 100;
+  top: 75%;
+}
+
+.proyectos-titulo{
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+}
+
+main {
+  padding: 2rem;
+  padding-top: 100px;
+  background-color: rgb(0, 128, 128);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.image-placeholder {
+  height: 150px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #005fa3;
+  font-style: italic;
+}
+
+#proyecto1{
+  background-image: url(https://www.coolmathgames.com/sites/default/files/ParkingFury_OG-logo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+}
+
+
+#proyecto2{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1wOqNiAAJJhsNqwCZJU9J4YPORu0RVPZxTQ&s);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+}
+
+#proyecto3{
+  background-image: url(https://ih1.redbubble.net/image.5541141003.0847/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+}
+
+#proyecto4{
+  background-image: url(https://ih1.redbubble.net/image.5541141003.0847/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+}
+
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 128, 128, 0.5);
+  color: white;
+  text-align: center;
+  padding-right: 20px;
+  padding: 1rem;
+}
+
+/*<svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 320" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(0, 128, 128, 1)" offset="0%"></stop><stop stop-color="rgba(0, 128, 128, 0.5)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,160L240,133.3C480,107,960,53,1440,58.7C1920,64,2400,128,2880,149.3C3360,171,3840,149,4320,138.7C4800,128,5280,128,5760,144C6240,160,6720,192,7200,202.7C7680,213,8160,203,8640,197.3C9120,192,9600,192,10080,208C10560,224,11040,256,11520,272C12000,288,12480,288,12960,240C13440,192,13920,96,14400,64C14880,32,15360,64,15840,101.3C16320,139,16800,181,17280,181.3C17760,181,18240,139,18720,112C19200,85,19680,75,20160,90.7C20640,107,21120,149,21600,186.7C22080,224,22560,256,23040,240C23520,224,24000,160,24480,149.3C24960,139,25440,181,25920,208C26400,235,26880,245,27360,250.7C27840,256,28320,256,28800,240C29280,224,29760,192,30240,160C30720,128,31200,96,31680,96C32160,96,32640,128,33120,122.7C33600,117,34080,75,34320,53.3L34560,32L34560,320L34320,320C34080,320,33600,320,33120,320C32640,320,32160,320,31680,320C31200,320,30720,320,30240,320C29760,320,29280,320,28800,320C28320,320,27840,320,27360,320C26880,320,26400,320,25920,320C25440,320,24960,320,24480,320C24000,320,23520,320,23040,320C22560,320,22080,320,21600,320C21120,320,20640,320,20160,320C19680,320,19200,320,18720,320C18240,320,17760,320,17280,320C16800,320,16320,320,15840,320C15360,320,14880,320,14400,320C13920,320,13440,320,12960,320C12480,320,12000,320,11520,320C11040,320,10560,320,10080,320C9600,320,9120,320,8640,320C8160,320,7680,320,7200,320C6720,320,6240,320,5760,320C5280,320,4800,320,4320,320C3840,320,3360,320,2880,320C2400,320,1920,320,1440,320C960,320,480,320,240,320L0,320Z"></path></svg>*/
+
+.card {
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+  padding: 10px;
+  box-shadow: #111;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 10px solid white;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card-front {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
+
+.fuente {
+  width: 180px;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #111;
+  background-color: white;
+  letter-spacing: 0.5px;
+}
+
+.backFont {
+  color: black;
+  width: 180px;
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.blackText {
+  display: box;
+  text-align: left;
+}
+
+#carta1 {
+  background-image: url(manu.jpg);
+}
+
+#carta2 {
+  background-image: url(mati.jpg);
+}
+
+#carta3 {
+  background-image: url(maxi.jpg);
+  background-size: cover;
+}
+
+#carta4 {
+  background-image: url(lauta.jpg);
+}
+.nose {
+  font-size: 2.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  background: linear-gradient(90deg, #ffffff, #00aaff, #ffffff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: textLoop 7s ease-in-out infinite;
+  text-transform: uppercase;
+}
+
+@keyframes textLoop {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+    background-position: 200% 0;
+  }
+  20% {
+    transform: translateX(0%);
+    opacity: 1;
+    background-position: 0 0;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+    background-position: 0 0;
+  }
+  80% {
+    transform: translateX(100%);
+    opacity: 0;
+    background-position: -200% 0;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+    background-position: 200% 0;
+  }
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  aspect-ratio: 1 / 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.project-card button:hover{
+  cursor: pointer;
+}
+
+.project-card a, p, button{
+  margin-top: 10px;
+}
+
+.project-card button{
+  margin-bottom: 7px;
+}
+
+.project-card .image-placeholder {
+  background-color: #cce6ff;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  color: #005fa3;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
