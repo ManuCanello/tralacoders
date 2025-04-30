@@ -223,12 +223,9 @@
   
 
   .image-placeholder{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-clip: content-box;
+    
     max-width: 1080px;
     height: 1000px;
-    
   }
 
 
