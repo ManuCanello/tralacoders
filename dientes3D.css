@@ -7,7 +7,7 @@
   body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    background-color: #2671b3;
     color: #222;
     overflow-x: hidden;
   }
@@ -179,7 +179,7 @@
   }
   
   .fuente {
-    width: 180px;
+    width: 100%;
     position: absolute;
     bottom: 0;
     padding: 10px;
@@ -220,4 +220,50 @@
     background-image: url(lauta.jpg);
 
   }  
+  
+
+  .image-placeholder{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+  }
+
+
+  #img1{
+    background-image: url(img1.avif);
+  }
+
+  
+  #img2{
+    background-image: url(img2.png);
+    
+  }
+
+  #img3{
+    background-image: url(img3.jpg);
+  }
+  
+  #img4{
+    background-image: url(img4\ .jpg);
+  }
+  
+  #img5{
+    background-image: url(img5.png);
+  }
+  
+  #img6{
+    background-image: url(img6.avif);
+  }
+  
+  #img7{
+    background-image: url(ParkeAR.jpg);
+  }
+  
+  #img8{
+    background-image: url(img8.jpg);
+  }
+  
+  #img9{
+    background-image: url(img9.avif);
+  }
   
