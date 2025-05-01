@@ -1,0 +1,233 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Tipografías y colores generales */
+  body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #222;
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header (misma que index) */
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .logo {
+    background: url(/assets/trala.png) no-repeat center/contain;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .titulo {
+    font-size: 1.125rem; /* 18px */
+    font-weight: 600;
+    color: white;
+    white-space: nowrap;
+  }
+  
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav button {
+    background-color: rgba(0, 128, 128, 0.5);
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  nav button:hover {
+    background-color: #005fa3;
+    color: #cce6ff;
+  }
+  
+  nav a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+  
+  /* Main / Secciones */
+  main {
+    padding: 100px 2rem 2rem;
+    background-color: #008080;
+    color: white;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  /* Títulos de sección */
+  h2.titulo {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Bloques de contenido con texto e imagen */
+  .content-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 0 auto 2rem;
+    max-width: 1200px;
+  }
+  
+  /* Alternar orden en bloques pares */
+  .content-block:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  /* Texto */
+  .content-block .text {
+    flex: 1;
+  }
+  
+  .content-block .text p,
+  .content-block .text ul {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .content-block .text ul li {
+    margin-left: 1.2rem;
+    list-style-type: disc;
+  }
+  
+  /* Placeholder de Imagen: cuadrado 150x150 adaptable */
+  .image-placeholder {
+    flex: 0 0 350px;
+    width: 350px;
+    height: 350px;
+    background-color: #cce6ff;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+  }
+  
+  /* IDs de imagenes específicas (ejemplo) */
+  #img1 { background-image: url(/assets/ParkeAR.jpg); }
+  #img2 { background-image: url(/assets/img1.avif); }
+  #img3 { background-image: url(/assets/img2.png); }
+  #img4 { background-image: url(/assets/img3.jpeg); }
+  #img5 { background-image: url(/assets/img4\ .jpg); }
+  #img6 { background-image: url(/assets/img5.png); }
+  #img7 { background-image: url(/assets/img6.avif); }
+  #img8 { background-image: url(/assets/img8.jpg); }
+  #img9 { background-image: url(/assets/img9.jpg); }
+  
+  /* Footer / THE TEAM (mismo estilo que #equipo del index) */
+  #equipo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  
+  #equipo h1 {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 8px solid white;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #111;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .fuente {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    background-color: white;
+  }
+  
+  .backFont {
+    font-size: 0.875rem;
+    margin: 0.25rem 0;
+  }
+  
+  /* IDs de fotos de equipo */
+  #carta1 { background-image: url(/assets/manu.jpg); background-size: cover; }
+  #carta2 { background-image: url(/assets/mati.jpg); background-size: cover; }
+  #carta3 { background-image: url(/assets/maxi.jpg); background-size: cover; }
+  #carta4 { background-image: url(/assets/lauta.jpg); background-size: cover; }
