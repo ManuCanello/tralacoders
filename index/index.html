@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="png" href="trala.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>TRALACODERS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/d7846a139d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="trala.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>TRALACODERS</title>
 </head>
 <body>
   <header>
     <div class="logo-titulo">
       <div class="logo"></div>
-      <p class="titulo">TRALACODERS: MAS ALLA DE UN ALGORITMO</p>
+      <p class="titulo">TRALACODERS: MÁS ALLÁ DE UN ALGORITMO</p>
     </div>
     <nav>
       <button>Inicio</button>
@@ -31,173 +32,160 @@
     </div>
   </div>
 
-<svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-      <stop stop-color="rgba(0, 128, 128, 1)" offset="0%"></stop>
-      <stop stop-color="rgba(0, 0, 0, 0.4)" offset="100%"></stop>
-    </linearGradient>
-  </defs>
-  <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" 
-    d="M0,30 
-       C180,40 360,20 540,30 
-       C720,40 900,10 1080,20 
-       C1260,30 1440,20 1440,20 
-       L1440,120 
-       L0,120 
-       Z" />
-</svg>
+  <svg id="wave" viewBox="0 0 1440 120">
+    <defs>
+      <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+        <stop stop-color="var(--color-primary)" offset="0%"></stop>
+        <stop stop-color="rgba(0,0,0,0.4)" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+    <path fill="url(#sw-gradient-0)"
+      d="M0,30 
+         C180,40 360,20 540,30 
+         C720,40 900,10 1080,20 
+         C1260,30 1440,20 1440,20 
+         L1440,120 
+         L0,120 
+         Z" />
+  </svg>
 
-<div id="equipo">
-  <h1>THE TEAM</h1>
-  <div class="card" >
-    <div class="card-inner" > 
-      <div class="card-front" id="carta1">
-          <div class="fuente">Manuel Canello</div>
+  <section id="equipo">
+    <h1 class="section-title team-title">THE TEAM</h1>
+    <div class="cards">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" id="carta1">
+            <div class="fuente">Manuel Canello</div>
+          </div>
+          <div class="card-back">
+            <div class="backText">
+              <p class="backFont">Edad: 22</p>
+              <p class="backFont">Nacionalidad: Argentino</p>
+              <p class="backFont">Pueblo de origen: Vila</p>
+              <p class="backFont">Roles: Diseñador</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card-back">
-        <div class="backText">
-          <p class="backFont">Edad:22</p>
-          <p class="backFont">Nacionalidad: Argentino</p>
-          <p class="backFont">Pueblo de origen: Vila</p>
-          <p class="backFont"> Roles:Diseñador</p>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" id="carta2">
+            <div class="fuente">Matias Oliver</div>
+          </div>
+          <div class="card-back">
+            <div class="backText">
+              <p class="backFont">Edad: 20</p>
+              <p class="backFont">Nacionalidad: Argentino</p>
+              <p class="backFont">Ciudad de origen: Santa Fe City</p>
+              <p class="backFont">Roles: Documentador</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" id="carta3">
+            <div class="fuente">Maximo Rojas</div>
+          </div>
+          <div class="card-back">
+            <div class="backText">
+              <p class="backFont">Edad: 20</p>
+              <p class="backFont">Nacionalidad: Argentino</p>
+              <p class="backFont">Ciudad de origen: Santa Fe City</p>
+              <p class="backFont">Roles: Líder/Coordinador</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" id="carta4">
+            <div class="fuente">Lautaro Acevedo</div>
+          </div>
+          <div class="card-back">
+            <div class="backText">
+              <p class="backFont">Edad: 26</p>
+              <p class="backFont">Nacionalidad: Argentino</p>
+              <p class="backFont">Ciudad de origen: Santoto</p>
+              <p class="backFont">Roles: Comunicador</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="card-inner" > 
-      <div class="card-front" id="carta2">
-        <div class="fuente">Matias Oliver</div>
-      </div>
-      <div class="card-back">
-        <div class="backText">
-          <p class="backFont">Edad:20</p>
-          <p class="backFont">Nacionalidad: Argentino</p>
-          <p class="backFont">Ciudad de origen: Santa Fe City</p>
-          <p class="backFont">Roles: Documentador</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-inner" > 
-      <div class="card-front" id="carta3">
-        <div class="fuente">Maximo Rojas</div>
-      </div>
-      <div class="card-back">
-        <div class="backText">
-          <p class="backFont">Edad:20</p>
-          <p class="backFont">Nacionalidad: Argentino</p>
-          <p class="backFont">Ciudad de origen: Santa Fe City</p>
-          <p class="backFont">Roles: Lider/Coordinador</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-inner" > 
-      <div class="card-front" id="carta4">
-        <div class="fuente">Lautaro Acevedo</div>
-      </div>
-      <div class="card-back">
-        <div class="backText">
-          <p class="backFont">Edad:26</p>
-          <p class="backFont">Nacionalidad :Argentino</p>
-          <p class="backFont">Ciudad de origen: Santoto</p>
-          <p class="backFont"> Roles: Comunicador</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
 
-</div>
+  <main id="main">
+    <h1 class="section-title">NUESTROS PROYECTOS</h1>
+    <div class="carousel-wrapper">
+      <button class="carousel-nav prev">&larr;</button>
+      <div class="carousel-container">
+        <div class="slide slide1">
+          <div class="slide-content">
+            <p>Aplicación para encontrar lugar de estacionamiento</p>
+            <a href="/parkeAR/parkeAR.html"><button>Ver proyecto</button></a>
+          </div>
+        </div>
+        <div class="slide slide2">
+          <div class="slide-content">
+            <p>App odontológica para modelado de dientes 3D</p>
+            <a href="/teeths3D/dientes3D.html"><button>Ver proyecto</button></a>
+          </div>
+        </div>
+        <div class="slide slide3">
+          <div class="slide-content">
+            <p>Descripción del Proyecto 3</p>
+            <button>Ver proyecto</button>
+          </div>
+        </div>
+        <div class="slide slide4">
+          <div class="slide-content">
+            <p>Descripción del Proyecto 4</p>
+            <button>Ver proyecto</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-nav next">&rarr;</button>
+    </div>
+  </main>
 
-<main id="main">
-  <h1 style="margin: 35px; color: #fff; text-align: center;">NUESTROS PROYECTOS</h1>
-  <div class="carousel-wrapper">
-    <button class="carousel-nav prev">&larr;</button>
-    <div class="carousel-container">
-      <div class="slide slide1">
-        <div class="slide-content">
-          <p>Nuestra aplicación para encontrar lugar de estacionamiento</p>
-          <a href="/parkeAR/parkeAR.html"><button>Ver proyecto</button></a>
-        </div>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>Tralacoders</h2>
+        <p>Más allá de un algoritmo...</p>
       </div>
-      <div class="slide slide2">
-        <div class="slide-content">
-          <p>App odontológica para modelado de dientes 3D</p>
-          <a href="/teeths3D/dientes3D.html"><button>Ver proyecto</button></a>
-        </div>
-      </div>
-      <div class="slide slide3">
-        <div class="slide-content">
-          <p>Descripción del Proyecto 3.</p>
-          <a href="#"><button>Ver proyecto</button></a>
-        </div>
-      </div>
-      <div class="slide slide4">
-        <div class="slide-content">
-          <p>Descripción del Proyecto 4.</p>
-          <a href="#"><button>Ver proyecto</button></a>
+      <div class="footer-social">
+        <h3>Redes</h3>
+        <div class="social-icons">
+          <a><i class="fa-brands fa-linkedin"></i></a>
+          <a><i class="fa-brands fa-square-instagram"></i></a>
+          <a><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a><i class="fa-brands fa-tiktok"></i></a>
         </div>
       </div>
     </div>
-    <button class="carousel-nav next">&rarr;</button>
-  </div>
-</main>
-<footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-logo">
-      <h2>MiSitio</h2>
-      <p>Conectando ideas y tecnología.</p>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Tralacoders Inc. Todos los derechos reservados.</p>
     </div>
-    <div class="footer-social">
-      <h3>Redes</h3>
-      <div class="social-icons">
-        <a href="#">--------</a>
-        <a href="#">--------</a>
-        <a href="#">--------</a>
-        <a href="#">--------</a>
-      </div>
-    </div>
-  </div>
+  </footer>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025 Tralacoders Inc. Todos los derechos reservados.</p>
-  </div>
-</footer>
-
-
+  <script>
+    (function(){
+      const container = document.querySelector('.carousel-container');
+      const slides = document.querySelectorAll('.slide');
+      const prevBtn = document.querySelector('.carousel-nav.prev');
+      const nextBtn = document.querySelector('.carousel-nav.next');
+      let index = 0, total = slides.length;
+      function update() {
+        container.style.transform = `translateX(-${index * 100}vw)`;
+        prevBtn.disabled = index === 0;
+        nextBtn.disabled = index === total - 1;
+      }
+      prevBtn.addEventListener('click', () => { if (index>0) index--; update(); });
+      nextBtn.addEventListener('click', () => { if (index<total-1) index++; update(); });
+      update();
+    })();
+  </script>
 </body>
-<script>
-  (function(){
-    const container = document.querySelector('.carousel-container');
-    const slides = document.querySelectorAll('.slide');
-    const prevBtn = document.querySelector('.carousel-nav.prev');
-    const nextBtn = document.querySelector('.carousel-nav.next');
-    let index = 0, total = slides.length;
-
-    function update() {
-      container.style.transform = `translateX(-${index * 100}vw)`;
-      prevBtn.disabled = index === 0;
-      nextBtn.disabled = index === total - 1;
-    }
-
-    prevBtn.addEventListener('click', () => {
-      if (index > 0) index--;
-      update();
-    });
-    nextBtn.addEventListener('click', () => {
-      if (index < total - 1) index++;
-      update();
-    });
-
-    // arranca en la primera slide
-    update();
-  })();
-</script>
-
-
-
 </html>
