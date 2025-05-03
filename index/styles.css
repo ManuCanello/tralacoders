@@ -221,111 +221,53 @@ nav a {
   text-align: center;
   align-items: center;
 }
-
-main {
-  padding: 100px 2rem 2rem;
-  background-color: #008080;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-.image-placeholder {
-  height: 150px;
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #005fa3;
-  font-style: italic;
-}
-
-#proyecto1, #proyecto2, #proyecto3, #proyecto4 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-clip: content-box;
-}
-
-#proyecto1 { background-image: url(/assets/ParkeAR.jpg); }
-#proyecto2 { background-image: url(/assets/tralabrackets.png); }
-#proyecto3, #proyecto4 {
-  background-image: url(https://ih1.redbubble.net/image.5541141003.0847/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg);
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-}
-
-.project-card {
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  overflow: hidden;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  aspect-ratio: 1 / 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  cursor: pointer;
-}
-
-.project-card button:hover {
-  cursor: pointer;
-}
-
-.project-card a,
-.project-card p,
-.project-card button {
-  margin-top: 10px;
-}
-
-.project-card button {
-  margin-bottom: 7px;
-}
-
-.project-card .image-placeholder {
-  background-color: #cce6ff;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-style: italic;
-  color: #005fa3;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-/* Carrusel full‐width */
-.carousel-wrapper {
+/* MAIN full-screen slides */
+main#main {
   position: relative;
   overflow: hidden;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto 2rem;
 }
-
+.carousel-wrapper {
+  position: relative;
+}
 .carousel-container {
   display: flex;
-  transition: transform 0.4s ease;
-  width: 100%;
+  transition: transform 0.5s ease;
+  width: 400vw;    /* 4 slides × 100vw */
 }
-
-.carousel-slide {
-  flex: 0 0 100%;
+.slide {
+  flex: 0 0 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 0 1rem;
-  box-sizing: border-box;
+}
+.slide-content {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+.slide-content p {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.slide-content button {
+  background-color: rgba(0,128,128,0.8);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.slide-content button:hover {
+  background-color: rgba(0,128,128,1);
 }
 
 /* Flechas */
@@ -345,10 +287,9 @@ section {
 }
 .carousel-nav.prev { left: 1rem; }
 .carousel-nav.next { right: 1rem; }
-
-/* Reajusta .project-card si hace falta */
-.project-card {
-  max-width: 500px;
-  width: 100%;
+.carousel-nav:disabled {
+  opacity: 0.4;
+  cursor: default;
 }
+
 
