@@ -236,9 +236,3 @@ main#main {
   padding-top:1rem; border-top:1px solid var(--text-muted);
   font-size:.9rem; color:#aaa;
 }
-
-/* Responsive */
-@media (max-width:768px) {
-  .footer-container { flex-direction:column; text-align:center; }
-  .social-icons a { margin:0 8px; }
-}
